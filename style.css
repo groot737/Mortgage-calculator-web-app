@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body{
+    background-color: #F4F6FB;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 794px;
+    height: 560px;
+    display: flex;
+    align-items: center;
+    border: 10px solid #F7F9FC;
+}
+
+.child-container{
+    margin-left: 25px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-row-gap: 50px;
+}
+
+h1{
+    color: #000;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.sliders{
+    display: flex;
+    row-gap: 60px;
+    column-gap: 50px;
+    flex-wrap: wrap;
+}
+
+.sliders > p{
+    color: #000;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+span{
+    font-weight: bold;
+    color: #000;
+    font-size: 25px;
+
+}
+
+#symbols{
+    display: none;
+}
+
+.slider{
+    -webkit-appearance: none;
+  appearance: none; 
+  width: 335px;
+  cursor: pointer;
+  margin-top: 30px;
+  outline: none;
+  border-radius: 15px;
+  height: 10px;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none; 
+    height: 21px;
+    width: 21px;
+    background-color: #5D7CC6;
+    border-radius: 50%;
+}
+  
+.slider::-moz-range-thumb {
+    height: 15px;
+    width: 15px;
+    background-color: #5D7CC6;
+    border-radius: 50%;
+    border: none;
+    transition: .2s ease-in-out;
+}
+
+.result{
+    display: flex;
+    gap: 230px;
+}
+
+button{
+    width: 224px;
+    height: 53px;
+    border-radius: 5px;
+    background: #5D7CC6;
+    color: #FFF;
+    font-size: 15px;
+    font-style: normal;
+    border: none;
+}
+
+@media screen and (max-width: 830px){
+    .container{
+        height: 1005px;
+        width: 400px;
+    }
+    .sliders{
+        width: 300px;
+    }
+    .result{
+        width: 100px;
+        gap: 50px;
+        flex-wrap: wrap;
+    }
+}
+
+@media  screen and (max-width: 400px) {
+    .container{
+        width: 100%;
+    }
+    .sliders{
+        width: 100%;
+        margin-left: 0px;
+    }
+    .slider{
+        width: 100%;
+    }
+}

@@ -16,33 +16,33 @@
             <h1>Mortgage calculator</h1>
             <div class="sliders">
                 <div class="item">
-                    <p>Purchase price: <span>$435,000</span></p>
-                    <input type="range" class="slider" min="1" max="1000000">
+                    <p>Purchase price: <span id="purchasePrice"></span></p>
+                    <input type="range" id="0" class="slider" min="1" max="450000">
                 </div>
                 <div class="item">
-                    <p>Down payment: <span>$435,000</span></p>
-                    <input type="range" class="slider" min="1" max="1000000">
+                    <p>Down payment: <span id="downPayment"></span></p>
+                    <input type="range" id="1" class="slider" min="1" max="135000">
                 </div>
                 <div class="item">
-                    <p>Repayment time: <span>$435,000</span></p>
-                    <input type="range" class="slider" min="1" max="100">
+                    <p>Interest rate: <span id="interestRate"></span></p>
+                    <input type="range" id="2" class="slider" min="1" max="100">
                 </div>
                 <div class="item">
-                    <p>Interest rate: <span>$435,000</span></p>
-                    <input type="range" class="slider" min="1" max="100">
+                    <p>Repayment time:  <span id="repaymentTime"></span></p>
+                    <input type="range" id="3" class="slider" min="1" max="100">
                 </div>
             </div>
             <div class="result">
                 <div class="result-item">
                     <p>Loan amount</p>
-                    <h2 style="font-size:30px; margin-top: 17px;">$315,000</h2>
+                    <h2 style="font-size:30px; margin-top: 17px;"></h2>
                 </div>
                 <div class="result-item">
-                    <p>Loan amount</p>
-                    <h2 style="font-size:30px; margin-top: 17px;">$315,000</h2>
+                    <p>Estimated pr. month:</p>
+                    <h2 style="font-size:30px; margin-top: 17px;"></h2>
                 </div>
             </div>
-            <button>Get a mortgage quote</button>
+            <button onclick="calculate()">Get a mortgage quote</button>
         </div>
     </div>
 </body>
